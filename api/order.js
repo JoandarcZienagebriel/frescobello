@@ -119,5 +119,12 @@ export default async function handler(req, res) {
 
 
   }
+  await fetch("/api/send-order-email", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(data),
+});
 
 }
