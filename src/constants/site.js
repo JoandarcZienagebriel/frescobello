@@ -130,6 +130,6 @@ export const METHOD_PHASES = [
     title: 'Distribution',
     subtitle: 'From our facility to your kitchen',
     image: 'https://media.base44.com/images/public/6a4a0a966b597db054804af5/8ec462e82_generated_f39bec10.png',
-    description: 'Once packaged, our pasta is prepared for efficient distribution to customers and business partners. We supply supermarkets, restaurants, hotels, catering companies, retail stores, and other institutions with dependable service. Every order is handled with care to ensure products arrive fresh and on schedule. Our logistics network is designed to support reliable deliveries across all markets we serve. From our production facility to your kitchen or business, we are committed to delivering premium quality with every shipment.',
+    description: 'Once packaged, our pasta is prepared for efficient distribution to customers and business partners. We supply supermarkets, restaurants, hotels, catering companies, airlines, educational & public institutions, retail stores, and other institutions with dependable service. Every order is handled with care to ensure products arrive fresh and on schedule. Our logistics network is designed to support reliable deliveries across all markets we serve. From our production facility to your kitchen or business, we are committed to delivering premium quality with every shipment.',
   }]
 export const ABOUT_BG_IMAGE = 'https://media.base44.com/images/public/6a4a0a966b597db054804af5/e176be9c5_generated_1cd5889d.png';
