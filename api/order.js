@@ -1,5 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
+import { Resend } from "resend";
 
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
