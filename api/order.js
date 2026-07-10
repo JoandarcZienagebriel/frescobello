@@ -90,7 +90,18 @@ export default async function handler(req, res) {
       throw error;
 
     }
+await resend.emails.send({
+  from: "onboarding@resend.dev",
+  to: "pedromagri850@gmail.com",
+  subject: `New Order ${orderNumber}`,
+  html: `<h2>You have a new order!</h2>`,
+});
 
+// 👇 THEN return the response
+return res.status(200).json({
+  success: true,
+  order: data,
+});
 
 
     return res.status(200).json({
@@ -119,12 +130,5 @@ export default async function handler(req, res) {
 
 
   }
-  await fetch("/api/send-order-email", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(data),
-});
 
 }
