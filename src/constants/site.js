@@ -101,7 +101,7 @@ export const METHOD_PHASES = [
     title: 'Shaping & Extrusion',
     subtitle: 'Crafting every shape',
     image: shapes,
-    description: 'The prepared dough is shaped into a variety of pasta styles using precision-engineered molds and extrusion equipment. Whether producing spaghetti, penne, fusilli, or other varieties, each shape is crafted with consistency and care. The process preserves the pasta\'s ideal texture while maintaining its distinctive appearance.',
+    description: 'The prepared dough is shaped into a variety of pasta styles using precision-engineered molds and extrusion equipment. Whether producing spaghetti, penne, tagliatelle, or other varieties, each shape is crafted with consistency and care. The process preserves the pasta\'s ideal texture while maintaining its distinctive appearance.',
   },
   {
     id: 5,
