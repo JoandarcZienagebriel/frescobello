@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Button from '../../components/common/Button';
-import k from '../../assets/img/machine.png'
+import k from '../../assets/img/machine.avif'
 export default function MethodPreview() {
   return (
     <section className="relative min-h-[35rem] border-t-8 border-b-8 flex flex-col items-center justify-center overflow-hidden">

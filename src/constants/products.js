@@ -1,5 +1,5 @@
 import ravioli from '../assets/img/ravioli.png';
-import lasagna from '../assets/img/lasagna.jpg'
+import lasagna from '../assets/img/lasagna.avif'
 import lasagnaSheets from '../assets/img/lasagna.png';
 import carTaglia from '../assets/img/carTagliatelle.png';
 import carSpa from '../assets/img/carSpaghetti.png';

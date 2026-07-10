@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Button from '../../components/common/Button';
 import { ABOUT_BG_IMAGE } from '../../constants/site';
-import fresco from '../../assets/img/fresco.jpg';
+import fresco from '../../assets/img/fresco.avif';
 export default function FrescoBelloSection() {
   return (
     <section className="relative min-h-[35rem] border-b-8 flex flex-col items-center justify-center overflow-hidden">

@@ -1,15 +1,15 @@
-import shelly from '../assets/img/17.jpg';
-import girlPasta from '../assets/img/16.jpg';
-import lasagna from '../assets/img/13.jpg';
-import alfredo from '../assets/img/12.jpg';
-import wine from '../assets/img/15.jpg';
-import ragu from '../assets/img/11.jpg';
-import dry from '../assets/img/dry.png';
-import shapes from '../assets/img/shapes.jpg';
-import quality from '../assets/img/quality.jpg';
+import shelly from '../assets/img/17.avif';
+import girlPasta from '../assets/img/16.avif';
+import lasagna from '../assets/img/13.avif';
+import alfredo from '../assets/img/12.avif';
+import wine from '../assets/img/15.avif';
+import ragu from '../assets/img/11.avif';
+import dry from '../assets/img/dry.avif';
+import shapes from '../assets/img/shapes.avif';
+import quality from '../assets/img/quality.avif';
 import oatTaglia from '../assets/img/oatTagliatelle.png';
-import machine from '../assets/img/machine.png';
-import fresco from '../assets/img/fresco.png';
+import machine from '../assets/img/machine.avif';
+import fresco from '../assets/img/hero.png';
 export const SITE_CONFIG = {
   name: 'FrescoBello',
   tagline: 'Freshly Crafted. Professionally Trusted.',

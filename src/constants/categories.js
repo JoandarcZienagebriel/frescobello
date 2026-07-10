@@ -1,10 +1,10 @@
-import tagliatelle from '../assets/img/5.jpg';
-import spaghetti from '../assets/img/4.jpg';
-import penne from '../assets/img/8.jpg';
+import tagliatelle from '../assets/img/5.avif';
+import spaghetti from '../assets/img/4.avif';
+import penne from '../assets/img/8.avif';
 
 
-import pappardelle from '../assets/img/2.jpg';
-import lasagna from '../assets/img/lasagna.jpg';
+import pappardelle from '../assets/img/2.avif';
+import lasagna from '../assets/img/lasagna.avif';
 import ravioli from '../assets/img/3.jpg';
 export const CATEGORIES = [
   {

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Breadcrumb from '../components/common/Breadcrumb';
 import { ABOUT_BG_IMAGE, SITE_CONFIG } from '../constants/site';
-import storyBackground from '../assets/img/our-story.jpg';
+import storyBackground from '../assets/img/our-story.avif';
 
 export default function About() {
   return (
