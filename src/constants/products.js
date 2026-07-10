@@ -274,7 +274,7 @@ export const PRODUCTS = [
     cookingTime: '7-9 min',
     suggestedDishes: ['Classic Bolognese', 'Traditional ragu', 'Truffle and parmesan'],
     image: pdsTaglia,
-    bestSeller: true,
+    bestSeller: false,
     featured: true,
   },
   {
@@ -291,7 +291,7 @@ export const PRODUCTS = [
     cookingTime: '7-9 min',
     suggestedDishes: ['Classic Bolognese', 'Traditional ragu', 'Truffle and parmesan'],
     image: pdsPappar,
-    bestSeller: false,
+    bestSeller: true,
     featured: false,
   },
   {
