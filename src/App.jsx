@@ -19,7 +19,7 @@ const About = lazy(() => import('./pages/About'));
 const OurMethod = lazy(() => import('./pages/OurMethod'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Checkout = lazy(() => import('./pages/Checkout'));
-
+const OrderSuccess = lazy(() => import('./pages/OrderSuccess'));
 const PageLoader = () => (
   <div className="min-h-screen flex items-center justify-center pt-20">
     <LoadingSpinner size="lg" />
@@ -56,6 +56,7 @@ const AuthenticatedApp = () => {
         <Route path="/our-method" element={<Suspense fallback={<PageLoader />}><OurMethod /></Suspense>} />
         <Route path="/contact" element={<Suspense fallback={<PageLoader />}><Contact /></Suspense>} />
         <Route path="/checkout" element={<Suspense fallback={<PageLoader />}><Checkout /></Suspense>} />
+        <Route path="/ordersuccess" element={<Suspense fallback={<PageLoader />}><OrderSuccess/></Suspense>} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

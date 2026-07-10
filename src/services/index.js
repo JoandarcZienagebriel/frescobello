@@ -78,21 +78,31 @@ export const cartService = {
  * Orders service
  */
 export const orderService = {
+
   async create(orderData) {
-    if (!API_BASE_URL) return { id: Date.now(), ...orderData, status: 'pending' };
-    const res = await fetch(`${API_BASE_URL}/api/orders`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+
+    const response = await fetch("/api/order", {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json",
+      },
+
       body: JSON.stringify(orderData),
     });
-    return res.json();
-  },
 
-  async getByUser(userId) {
-    if (!API_BASE_URL) return [];
-    const res = await fetch(`${API_BASE_URL}/api/orders?userId=${userId}`);
-    return res.json();
-  },
+
+    const result = await response.json();
+
+
+    if (!result.success) {
+      throw new Error(result.message);
+    }
+
+
+    return result.order;
+  }
+
 };
 
 /**

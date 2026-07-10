@@ -22,17 +22,52 @@ export default function Checkout() {
   const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    await orderService.create({
+  e.preventDefault();
+
+  setSubmitting(true);
+
+  try {
+
+    const order = await orderService.create({
+
       customer: form,
+
       items,
-      totals: { subtotal, tax, shipping, total },
+
+      totals: {
+        subtotal,
+        tax,
+        shipping,
+        total
+      }
+
     });
-    setSubmitting(false);
+
+
     clearCart();
-    navigate('/');
-  };
+
+
+    navigate("/order-success", {
+      state:{
+        orderNumber: order.order_number
+      }
+    });
+
+
+  } catch(error){
+
+    console.error(error);
+
+    alert(
+      "There was a problem placing your order. Please try again."
+    );
+
+  } finally {
+
+    setSubmitting(false);
+
+  }
+};
 
   if (items.length === 0) {
     return (
