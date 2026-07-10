@@ -47,7 +47,7 @@ export default function Checkout() {
     clearCart();
 
 
-    navigate("/order-success", {
+    navigate("/ordersuccess", {
       state:{
         orderNumber: order.order_number
       }
