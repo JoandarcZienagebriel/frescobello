@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SITE_CONFIG } from '../../constants/site';
-
+import frescologo from '../../assets/img/frescoBello-logo.avif'
 export default function Footer() {
   return (
     <footer className="bg-[#010B13] text-alabaster">
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
         <div className='flex items-center justify-start'>
            <img
-              src="https://media.base44.com/images/public/6a4a0a966b597db054804af5/225bc0afe_frescoBello-logo.png"
+              src= {frescologo}
               alt="FrescoBello"
               className="h-[10rem] md:h-[20rem] w-auto"
             />

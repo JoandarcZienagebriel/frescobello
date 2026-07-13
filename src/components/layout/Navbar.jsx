@@ -6,7 +6,7 @@ import { useCartStore } from '../../store/useCartStore';
 import { useSearchStore } from '../../store/useSearchStore';
 import { NAV_ITEMS } from '../../constants/site';
 import { CATEGORIES as PASTA_CATEGORIES } from '../../constants/categories';
-import logo from '../../assets/img/frescoBello-logo.png'
+import logo from '../../assets/img/frescoBello-logo.avif'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
