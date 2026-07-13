@@ -6,7 +6,7 @@ import { contactService } from '../services';
 import Breadcrumb from '../components/common/Breadcrumb';
 import Input from '../components/common/Input';
 import Button from '../components/common/Button';
-import contact from '../assets/img/contact.jpg';
+import contact from '../assets/img/contact.avif';
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
