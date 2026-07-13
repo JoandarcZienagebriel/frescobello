@@ -6,7 +6,7 @@ export default function BestSellers() {
   const bestSellers = PRODUCTS.filter((p) => p.bestSeller);
 
   return (
-    <AnimatedSection className="py-16 md:py-24 bg-secondary/30">
+    <AnimatedSection className="py-16 md:py-24 bg-obsidian text-alabaster">
       <div className="px-4 md:px-8 lg:px-12 mb-8">
         <div>
           <h2 className="font-heading text-3xl text-center md:text-4xl font-medium">Best Sellers</h2>

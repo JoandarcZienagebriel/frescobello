@@ -6,7 +6,7 @@ import { contactService } from '../services';
 import Breadcrumb from '../components/common/Breadcrumb';
 import Input from '../components/common/Input';
 import Button from '../components/common/Button';
-import contactbg from '../assets/img/contactbg.png';
+import contact from '../assets/img/contact.avif';
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
@@ -44,9 +44,10 @@ export default function Contact() {
     <div className="pt-16 md:pt-20 pb-20 min-h-screen">
       <section className="relative h-[45vh] md:h-[30vh] lg:h-[40vh] xl:h-[50vh]" 
             >
-        
-              <div className="absolute inset-0 flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${contactbg})`}}  >
                
+           <div className="absolute inset-0 flex items-center justify-center bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${contact})`}}>
+         
+            
                 <motion.h1
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -74,7 +75,7 @@ export default function Contact() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="space-y-8"
+              className="space-y-8 text-obsidian p-2 "
             >
               <div className="flex items-start gap-4">
                 <MapPin size={20} className="text-gold shrink-0 mt-1" />

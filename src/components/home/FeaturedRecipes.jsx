@@ -5,7 +5,7 @@ import AnimatedSection from '../../components/animations/AnimatedSection';
 
 export default function FeaturedRecipes() {
   return (
-    <AnimatedSection className="py-16 md:py-24">
+    <AnimatedSection className="py-16 bg-obsidian border-b-4 border-gold text-alabaster md:py-24">
       <div className="px-4 md:px-8 lg:px-12 mb-8">
         <h2 className="font-heading text-3xl text-center md:text-4xl font-medium">Featured Recipes</h2>
         <p className="text-sm text-center font-bold text-muted-foreground mt-2">Inspiration for your next meal</p>

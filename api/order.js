@@ -92,6 +92,7 @@ export default async function handler(req, res) {
       throw error;
 
     }
+    console.log("Resend key exists:", !!process.env.RESEND_API_KEY);
 await resend.emails.send({
   from: "onboarding@resend.dev",
   to: "pedromagri850@gmail.com",

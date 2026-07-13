@@ -3,7 +3,7 @@ import Button from '../../components/common/Button';
 import k from '../../assets/img/machine.avif'
 export default function MethodPreview() {
   return (
-    <section className="relative min-h-[35rem] border-t-8 border-b-8 flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-[35rem] border-t-4 border-b-4 flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           src={k}
@@ -20,7 +20,7 @@ export default function MethodPreview() {
         transition={{ duration: 0.5 }}
         className="relative z-10 px-4 md:px-8 lg:px-12 max-w-2xl"
       >
-        <h2 className="font-heading text-3xl text-center md:text-4xl font-medium text-alabaster mb-6">
+        <h2 className="font-heading text-3xl text-center text-alabaster md:text-4xl font-medium mb-6">
           Our Method
         </h2>
         <p className="text-base text-center md:text-lg text-alabaster/80 leading-relaxed mb-8">
@@ -28,7 +28,7 @@ export default function MethodPreview() {
           maintaining the authentic taste and texture of Italian cuisine.
         </p>
       <div className='flex items-center justify-center'>
-          <Button to="/our-method" variant="light" size="lg" className='hover:text-gold hover:border-gold'>
+          <Button to="/our-method" variant="light" size="lg" className='border border-gold text-white bg-gold hover:text-obsidian'>
           Our Method
         </Button>
       </div>

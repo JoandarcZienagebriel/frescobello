@@ -7,12 +7,12 @@ const ICONS = { Cog, Factory, Wheat, BadgeCheck, UtensilsCrossed, Home };
 
 export default function WhyChooseUs() {
   return (
-    <AnimatedSection className="py-16 border-t-4 border-b-8 md:py-14">
+    <AnimatedSection className="py-16 border-b-4 bg-obsidian text-alabaster md:py-14">
       <div className="px-4 md:px-8 lg:px-12">
         <h2 className="font-heading text-3xl md:text-4xl font-medium mb-12 text-center">
           Why Choose Us
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-platinum">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px">
           {WHY_CHOOSE_US.map((item, index) => {
             const Icon = ICONS[item.icon];
             return (
@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="flex items-center gap-4 bg-alabaster p-6 md:p-8"
+                className="flex items-center gap-4 p-6 md:p-8"
               >
                 {Icon && (
                   <div className="shrink-0 w-12 h-12 flex items-center justify-center text-gold">

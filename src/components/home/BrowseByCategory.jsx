@@ -5,7 +5,7 @@ import AnimatedSection from '../../components/animations/AnimatedSection';
 
 export default function BrowseByCategory() {
   return (
-    <AnimatedSection className="py-16 md:py-18">
+    <AnimatedSection className="py-16 border-t-4 bg-obsidian text-alabaster md:py-18">
       <div className="px-4 md:px-8 lg:px-12 pt-8 mb-12">
         <h2 className="font-heading text-3xl text-center md:text-4xl font-medium">Browse by Category</h2>
         <p className="text-sm text-center font-bold text-muted-foreground mt-2">Find your favorite pasta shape</p>

@@ -155,7 +155,7 @@ export const PRODUCTS = [
     cookingTime: '6-8 min',
     suggestedDishes: ['Goat cheese', 'Walnuts', 'Citrus herb sauces'],
     image: betPenne,
-    bestSeller: false,
+    bestSeller: true,
     featured: false,
   },
   {
@@ -172,7 +172,7 @@ export const PRODUCTS = [
     cookingTime: '8-10 min',
     suggestedDishes: ['Hearty meat sauces', 'Vegetable ragu', 'Mediterranean style'],
     image: bwgTaglia,
-    bestSeller: true,
+    bestSeller: false,
     featured: true,
   },
   {
@@ -240,7 +240,7 @@ export const PRODUCTS = [
     cookingTime: '7-9 min',
     suggestedDishes: ['Creamy Alfredo', 'Pesto', 'Butter and sage'],
     image: oatSpa,
-    bestSeller: false,
+    bestSeller: true,
     featured: false,
   },
   {
@@ -291,7 +291,7 @@ export const PRODUCTS = [
     cookingTime: '7-9 min',
     suggestedDishes: ['Classic Bolognese', 'Traditional ragu', 'Truffle and parmesan'],
     image: pdsPappar,
-    bestSeller: true,
+    bestSeller: false,
     featured: false,
   },
   {

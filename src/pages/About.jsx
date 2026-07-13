@@ -43,7 +43,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }} 
-            className="m-auto w-[17rem] md:w-1/2 bg-[#F5CE5A]/70 md:p-10 lg:p-14 "
+            className="m-auto w-[17rem] md:w-1/2 bg-[#292929]/70 md:p-10 lg:p-14 "
           >
             <div className='w-[16rem] p-4 lg:w-[20rem] '>
             <h2 className="font-heading text-3xl text-white whitespace-nowrap md:text-4xl font-medium mb-6" >
@@ -90,7 +90,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="pt-12 p-4 mt-4 m-auto w-[17rem]  md:w-1/2 bg-[#F5CE5A]/70"
+            className="pt-12 p-4 mt-4 m-auto w-[17rem]  md:w-1/2 bg-[#292929]/70"
           >
             <h2 className="font-heading text-3xl text-white md:text-4xl font-medium mb-6">Our Mission</h2>
             <p className="text-base text-white leading-relaxed mb-4">

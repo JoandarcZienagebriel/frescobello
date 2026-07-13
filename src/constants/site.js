@@ -9,7 +9,7 @@ import shapes from '../assets/img/shapes.avif';
 import quality from '../assets/img/quality.avif';
 import oatTaglia from '../assets/img/oatTagliatelle.png';
 import machine from '../assets/img/machine.avif';
-import fresco from '../assets/img/hero.png';
+import spa from '../assets/img/4.avif';
 export const SITE_CONFIG = {
   name: 'FrescoBello',
   tagline: 'Freshly Crafted. Professionally Trusted.',
@@ -36,11 +36,24 @@ export const NAV_ITEMS = [
 ];
 
 export const HERO_SLIDES = [
+  
   {
-    image: fresco,
+    image: alfredo,
     name: 'FrescoBello',
     tagline: 'Freshly crafted and professionally trusted',
-    description: 'FrescoBello produces premium fresh pasta in many shapes and styles.',
+    description: 'We produce premium fresh pasta in many shapes and styles.',
+  },
+  {
+    image: spa,
+    name: 'FrescoBello',
+    tagline: 'Freshly crafted and professionally trusted',
+    description: 'We produce premium fresh pasta in many shapes and styles.',
+  },
+  {
+    image: dry,
+    name: 'FrescoBello',
+    tagline: 'Freshly crafted and professionally trusted',
+    description: 'We produce premium fresh pasta in many shapes and styles.',
   },
 
 ];

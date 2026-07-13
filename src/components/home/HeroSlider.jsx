@@ -24,17 +24,18 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen min-h-[600px] w-full overflow-hidden"
+      className="relative h-screen min-h-[600px] w-full overflow-hidden" 
       aria-label="Hero"
       aria-roledescription="carousel"
     >
+        
       <AnimatePresence>
         <motion.div
           key={current}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: .8 }}
           className="absolute inset-0"
         >
           <img
@@ -43,12 +44,13 @@ export default function HeroSlider() {
             className="w-full h-full object-cover"
             fetchpriority="high"
           />
-          <div className="absolute inset-0 bg-obsidian/10" />
+         <div className="absolute inset-0 bg-obsidian/40" />
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 h-full flex items-center justify-center px-4">
-        <div className="max-w-3xl text-center text-alabaster">
+      <div className="relative z-10 h-full flex items-center justify-start px-8 md:px-16">
+      
+        <div className="max-w-3xl text-alabaster">
           <AnimatePresence>
             <motion.h1
               key={`title-${current}`}
@@ -56,11 +58,22 @@ export default function HeroSlider() {
               animate={{ x: 0, opacity: 1 }}
              
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="font-heading font-bold leading-[1.1] pt-[13rem] md:pt-[20rem]"
-              style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)' }}
+              className="font-heading font-bold text-alabaster leading-[1.1] pt-[3rem] md:pt-[5rem]"
+              style={{ fontSize: 'clamp(2.5rem, 14vw, 7rem)' }}
             >{slide.name}
              
             </motion.h1>
+          </AnimatePresence>
+           <AnimatePresence>
+            <motion.h4
+              key={`desc-${current}`}
+              initial={{ x: 0, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-lg text-[#E59500] md:text-lg leading-relaxed"
+            >
+           {slide.tagline}
+            </motion.h4>
           </AnimatePresence>
            <AnimatePresence>
             <motion.h3
@@ -69,27 +82,18 @@ export default function HeroSlider() {
               animate={{ x: 0, opacity: 1 }}
              
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="font-heading font-bold leading-[1.1] mb-2 pt-8"
-              style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}
+              className="text-md font-heading font-bold text-obsidian leading-[1.1] mb-8 pt-4"
+              style={{ fontSize: 'clamp(2rem, 8vw, 4rem)' }}
             >
-              {slide.tagline}
+                 {slide.description}
+              
             </motion.h3>
           </AnimatePresence>
 
-          <AnimatePresence>
-            <motion.p
-              key={`desc-${current}`}
-              initial={{ x: 0, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-alabaster/90"
-            >
-              {slide.description}
-            </motion.p>
-          </AnimatePresence>
+         
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button to="/shop" variant="light" size="lg" className='active:bg-obsidian active:text-alabaster hover:border-obsidian'>
+          <div className="flex flex-col sm:flex-row gap-4 justify-start">
+            <Button to="/shop" variant="light" size="lg" className='border border-obsidian active:text-alabaster hover:bg-gold hover:text-alabaster hover:border-alabaster'>
               Shop Now
             </Button>
             <Button to="/about" variant="outline" size="lg" className="border-alabaster text-alabaster btn-fill-gold">
