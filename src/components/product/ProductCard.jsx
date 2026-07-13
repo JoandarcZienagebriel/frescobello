@@ -60,8 +60,8 @@ export default function ProductCard({ product, index = 0 }) {
             className="flex items-center gap-1 px-[4rem] py-2 border border-gold bg-obsidian text-xs text-alabaster uppercase tracking-wider md:px-[6rem] lg:hover:bg-[#292929] transition-colors min-h-[40px] "
             aria-label={`Add ${product.name} to cart`}
           >
-            <Plus size={12} />
-            Add
+            
+            Order Now
           </button>
         </div>
       </div>
