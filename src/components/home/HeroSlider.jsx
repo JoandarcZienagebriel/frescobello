@@ -35,7 +35,7 @@ export default function HeroSlider() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: .8 }}
+          transition={{ duration: .6 }}
           className="absolute inset-0"
         >
           <img
