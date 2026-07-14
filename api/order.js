@@ -93,12 +93,29 @@ export default async function handler(req, res) {
 
     }
     console.log("Resend key exists:", !!process.env.RESEND_API_KEY);
-await resend.emails.send({
-  from: "onboarding@resend.dev",
-  to: "pedromagri850@gmail.com",
-  subject: `New Order ${orderNumber}`,
-  html: `<h2>You have a new order!</h2>`,
-});
+
+try {
+  const { data: emailData, error: emailError } = await resend.emails.send({
+    from: "onboarding@resend.dev",
+    to: "pedromagri850@gmail.com",
+    subject: `New Order ${orderNumber}`,
+    html: `
+      <h2>New Order</h2>
+      <p>Order Number: ${orderNumber}</p>
+      <p>Customer: ${customer.name}</p>
+      <p>Total: €${totals.total}</p>
+    `,
+  });
+
+  console.log("Email data:", emailData);
+  console.log("Email error:", emailError);
+
+  if (emailError) {
+    throw new Error(JSON.stringify(emailError));
+  }
+} catch (err) {
+  console.error("Resend failed:", err);
+}
 
 // 👇 THEN return the response
 return res.status(200).json({
