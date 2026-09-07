@@ -1,4 +1,7 @@
-# Live Demo: https://fresco-iota.vercel.app/                                                                                                                        Pasta Brand E-commerce Website
+# Live Demo: https://fresco-iota.vercel.app/
+
+
+# Pasta Brand E-commerce Website
 An e-commerce website for a pasta brand that allows customers to browse products and place orders online.
 Orders are stored in a database and automatically sent to the business owner via email for processing.
 
